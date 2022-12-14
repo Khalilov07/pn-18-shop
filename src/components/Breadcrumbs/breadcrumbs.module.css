@@ -1,0 +1,15 @@
+.wrapper {
+    margin: 20px 0;
+    aspect-ratio: 5/1.1;
+    background-image: url(https://celes.club/uploads/posts/2022-05/1653010306_1-celes-club-p-fon-dlya-mashini-v-profil-krasivie-1.jpg);
+    background-size: contain;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+h1 {
+    font-size: 48px;
+}
+

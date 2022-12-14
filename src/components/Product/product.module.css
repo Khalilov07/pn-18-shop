@@ -1,0 +1,32 @@
+.card {
+    width: calc(25% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: flex-start;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: translateX(-5px) ;
+}
+
+.img {
+    width: 100%;
+}
+
+.name {
+    color: black;
+    text-decoration: none;
+}
+
+.price {
+    margin-top: 10px;
+    font-size: 24px;
+    margin-top: auto;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

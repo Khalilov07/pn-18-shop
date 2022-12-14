@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "title": "фц",
+      "price": "12345",
+      "descr": "вфцке",
+      "img": "12345",
+      "id": 1
+    },
+    {
+      "title": "вфцвфцв",
+      "price": "123456",
+      "descr": "вцфвф",
+      "img": "",
+      "id": 2
+    },
+    {
+      "title": "",
+      "price": "",
+      "descr": "",
+      "img": "",
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$.gTVhYe0ki6EUEAyvDCe2uD26MiTWBH0/OiLapvbLaKnTpPkUSdZK",
+      "login": "admin",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "akram01@gmail.com",
+      "password": "$2a$10$Qyn9kBtFFnvEl0S7ko0iN.sKqBipFEbc1R1ElAXXE1qOY05YNK0s.",
+      "login": "khalilov",
+      "id": 2
+    },
+    {
+      "email": "daw@mail.ru",
+      "password": "$2a$10$JvLCTrWVZz3Gg4pDvxyteuCqs/bBZVCJOEtBvMBorwPJKuRzYSO0i",
+      "login": "",
+      "id": 3
+    },
+    {
+      "email": "aidar@mail.ru",
+      "password": "$2a$10$yK3LR3/c7ecxNJEkFFgs/e9tK.oE66UZGaKhtEPKVuCscfC1vxpnK",
+      "login": "aidar",
+      "id": 4
+    },
+    {
+      "email": "ahi@gmail.com",
+      "password": "$2a$10$ice5cDKG6l.M2T7v5RWoNO6ct3aDU2XSFMb9q6W77iBFEnArmgakO",
+      "login": "",
+      "id": 5
+    }
+  ]
+}
