@@ -6,41 +6,56 @@ import Header from '../../components/Header/Header';
 import Info from '../../components/Info/Info';
 import Product from '../../components/Product/Product';
 import styles from './catalogpage.module.css'
-import productService from '../../services/products'
-import { useParams } from 'react-router-dom';
+import productService from '../../services/products';
+import { TextField } from '@mui/material';
+
 
 const CatalogPage = () => {
 
     const [products, setProducts] = useState([])
 
-    const [sorted, setSorted] = useState("price")
-    
+    const [searchName, setSearchName] = useState('')
+
+    const [filteredCar, setFilteredCar] = useState([])
+
     useEffect(() => {
         productService
             .getProducts()
             .then(res => {
                 setProducts(res.data)
+                setFilteredCar(res.data)
             })
             .catch(err => console.log(err))
     }, [])
 
-    // useEffect(() => {
-    //     setProducts([].concat(products).sort((a, b) => {
-    //         if(sorted == "price") {
-    //             return a.price - b.price
-    //         }
-    //         return new Date(a.createdAt) - new Date(b.createdAt)
-    //     }))
-    // }, [sorted])
-    
+    const findName = (e) => {
+        setSearchName(e.target.value)
+        setFilteredCar(products.filter(product => product.title.includes(searchName)));
+    }
+
 
     return (
         <div>
             <Breadcrumbs title="Salon" />
-            <Filter sort={sorted} sortHandle={setSorted} />
+            <div className={styles.filter}>
+                <div className={styles.wrapperr}>
+                    <div className={styles.text}>
+                        <p className=''>Поиск машины:</p>
+                    </div>
+                    <div className={styles.controls}>
+                        <TextField
+                            value={searchName}
+                            onChange={findName}
+                            id="standard-basic"
+                            label="Введите название машины..."
+                            variant="standard"
+                            style={{ "fontSize": "14px" }} />
+                    </div>
+                </div>
+            </div>
             <div className={styles["products-wrapper"]}>
-                { products.map(product => {
-                   return <Product
+                {filteredCar.map(product => {
+                    return <Product
                         key={product.id}
                         id={product.id}
                         img={product.img}
@@ -48,7 +63,7 @@ const CatalogPage = () => {
                         price={product.price}
                         descr={product.descr}
                     />
-                }) }
+                })}
             </div>
             <Info />
             <Footer />
