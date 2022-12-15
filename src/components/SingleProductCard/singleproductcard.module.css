@@ -6,7 +6,6 @@
 }
 .img-wrapper {
     width: 40%;
-    background-color: #FFF9E6;
 }
 .img-wrapper img {
     display: block;
@@ -32,6 +31,7 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 30px;
+    align-items: flex-start;
 }
 .quantity {
     border: 1px solid #9F9F9F;
@@ -51,6 +51,24 @@
     border: 1px solid #000000;
     border-radius: 15px;
     font-size: 20px;
+    margin-top: 20px;
     background-color: white;
-    padding: 20px 50px;
+    padding: 10px 30px;
+}
+
+.delete {
+    margin-left: 20px;
+}
+
+.text {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.account {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 15px;
+    transition: 0.5s;
 }

@@ -110,7 +110,7 @@ const SingleProductCard = ({ img }) => {
                             <>
                                 {isAdmin && <div className='button-wrapper'>
                                     <Button variant="contained" color="success" onClick={handleEditMode}>Редактировать</Button>
-                                    <Link to='/catalog'><Button variant="contained" color="error" onClick={deletePost}>Удалить</Button></Link>
+                                    <Button style={{"marginLeft" : "20px"}} variant="contained" color="error" onClick={deletePost}><Link style={{"textDecoration" : "none", "color" : "white"}} to='/catalog'>Delete</Link></Button>
                                 </div>}
                             </>
                         )}
@@ -123,8 +123,8 @@ const SingleProductCard = ({ img }) => {
                         </>
                         :
                         <>
-                            <p>чтобы произвести пердоплату, надо зарегистрироваться или же авторизоватся</p>
-                            <Link to='/account'>перейти на страницу, регистрации и авторизации</Link>
+                            <p className={styles.text}>чтобы произвести пердоплату, надо зарегистрироваться или же авторизоватся</p>
+                            <Link className={styles.account} to='/account'>перейти на страницу, регистрации и авторизации</Link>
                         </>
                     }
 

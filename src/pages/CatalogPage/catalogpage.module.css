@@ -21,7 +21,7 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-    align-content: flex-end;
+    align-items: flex-end;
     padding: 20px 0
 }
 .text {

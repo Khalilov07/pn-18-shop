@@ -1,46 +1,18 @@
 {
   "posts": [
     {
-      "title": "фц",
+      "title": "dnwawld",
       "price": "12345",
-      "descr": "вфцке",
-      "img": "12345",
+      "descr": "ndwa",
+      "img": "",
       "id": 1
     },
     {
-      "title": "вфцвфцв",
-      "price": "123456",
-      "descr": "вцфвф",
+      "title": "",
+      "price": "",
+      "descr": "ndwa",
       "img": "",
       "id": 2
-    },
-    {
-      "title": "",
-      "price": "",
-      "descr": "",
-      "img": "",
-      "id": 3
-    },
-    {
-      "title": "Akram",
-      "price": "",
-      "descr": "",
-      "img": "",
-      "id": 4
-    },
-    {
-      "title": "a",
-      "price": "",
-      "descr": "",
-      "img": "",
-      "id": 5
-    },
-    {
-      "title": "",
-      "price": "",
-      "descr": "",
-      "img": "",
-      "id": 6
     }
   ],
   "users": [
